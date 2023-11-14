@@ -75,7 +75,7 @@ MealMate relies on several external APIs to provide its full range of features. 
 **Provide your SendGrid API Key:** Substitute the placeholder with your SendGrid API key.
 
 #### Google Cloud Services Key (for Google Maps functionality)
-**Locate the line in your code:** GOOGLEMAPS_API_KEY = `'Please enter your Google Cloud Platform API key'`
+**Locate the line in your code:** `GOOGLEMAPS_API_KEY = 'Please enter your Google Cloud Platform API key'`
 **Provide your Google Maps API Key:** Insert your Google Cloud Platform API key in place of the placeholder text.
 
 #### Important Notes
