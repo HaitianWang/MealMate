@@ -1,4 +1,7 @@
-# Project Name: Meal Mate
+# MealMate
+
+**Revolutionizing Your Dining Experience with AI-Driven Personalization**
+
 
 ## Purpose of the web application
 
@@ -146,8 +149,8 @@ Please read [log.txt](./log.txt) for details on our code of conduct, and the pro
 
 ## Authors
 
-Zhenyi Liang - 23461235@student.uwa.edu.au
 Haitian Wang - 23815631@student.uwa.edu.au
+Zhenyi Liang - 23461235@student.uwa.edu.au
 
 
 ## Deployment
