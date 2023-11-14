@@ -1,9 +1,4 @@
-# CITS5505 AGILE WEB DEVELOPMENT PROJECT2
-Project Name: Meal Mate
-
-Group Members:
-Hannah Liang 23461235
-Haitian Wang 23815631
+#Project Name: Meal Mate
 
 ## Purpose of the web application
 
