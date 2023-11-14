@@ -139,9 +139,11 @@ Via localhost: `http://127.0.0.1:5000`
 * Built following the [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) by **Miguel Grinberg**.
 
 
-[1] https://www.mathworks.com/company/newsletters/articles/developing-matlab-apps-using-the-model-view-controller-pattern.html
-[2] Reenskaug, T. (1979). Models-Views-Controllers. Retrieved from http://heim.ifi.uio.no/~trygver/themes/mvc/mvc-index.html
-[3] http://heim.ifi.uio.no/~trygver/themes/mvc/mvc-index.html
+[1]https://www.mathworks.com/company/newsletters/articles/developing-matlab-apps-using-the-model-view-controller-pattern.html
+
+[2]Reenskaug, T. (1979). Models-Views-Controllers. Retrieved from http://heim.ifi.uio.no/~trygver/themes/mvc/mvc-index.html
+
+[3]http://heim.ifi.uio.no/~trygver/themes/mvc/mvc-index.html
  
 
 
