@@ -1,4 +1,4 @@
-#Project Name: Meal Mate
+# Project Name: Meal Mate
 
 ## Purpose of the web application
 
