@@ -59,6 +59,26 @@ To run the app: `flask run`
 
 To stop the app: `deactivate`
 
+## Configuring API Keys
+
+MealMate relies on several external APIs to provide its full range of features. To get the application running properly, you'll need to configure the API keys for OpenAI, SendGrid, and Google Cloud Services. Open the [routes.py](./MealMate/routes.py) file and modify the following:
+
+#### OpenAI API Key (for ChatGPT integration)
+**Locate the line in your code:** `openai.api_key = "Please enter your OpenAI API key"`
+**Provide your OpenAI API Key:** Replace the placeholder text with your actual OpenAI API key.
+
+#### SendGrid API Key (for email services)
+**Locate the line in your code:** `YOUR_SENDGRID_ID = 'Please enter your SendGrid API key'`
+**Provide your SendGrid API Key:** Substitute the placeholder with your SendGrid API key.
+
+#### Google Cloud Services Key (for Google Maps functionality)
+**Locate the line in your code:** GOOGLEMAPS_API_KEY = `'Please enter your Google Cloud Platform API key'`
+**Provide your Google Maps API Key:** Insert your Google Cloud Platform API key in place of the placeholder text.
+
+#### Important Notes
+- Securing API Keys: It's crucial to keep your API keys confidential. Avoid pushing these keys to public repositories or sharing them in insecure environments.
+- API Key Permissions: Ensure that your API keys have the necessary permissions for the services required by MealMate.
+- Changes in Code: After updating the API keys in the code, save the changes and restart the server to apply them.
 
 ## Database
 ##### We have a database with 4 tables and 2 relationships:
