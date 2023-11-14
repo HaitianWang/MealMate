@@ -20,6 +20,7 @@ Say goodbye to decision stress and let MealMate revolutionize your dining experi
 </div>
 <br>
 MVC is widely attributed to Trygve Reenskaug, who reportedly invented it in the 1970s. Since then, it has gained immense popularity as a dominant pattern for server-side web applications[2].
+
 <br>
 
 **Model**
@@ -67,15 +68,15 @@ To stop the app: `deactivate`
 MealMate relies on several external APIs to provide its full range of features. To get the application running properly, you'll need to configure the API keys for OpenAI, SendGrid, and Google Cloud Services. Open the [routes.py](./MealMate/routes.py) file and modify the following:
 
 #### OpenAI API Key (for ChatGPT integration)
-**Locate the line in your code:** `openai.api_key = "Please enter your OpenAI API key"`
+**Locate the line in your code:** `openai.api_key = "Please enter your OpenAI API key"`  
 **Provide your OpenAI API Key:** Replace the placeholder text with your actual OpenAI API key.
 
 #### SendGrid API Key (for email services)
-**Locate the line in your code:** `YOUR_SENDGRID_ID = 'Please enter your SendGrid API key'`
+**Locate the line in your code:** `YOUR_SENDGRID_ID = 'Please enter your SendGrid API key'`  
 **Provide your SendGrid API Key:** Substitute the placeholder with your SendGrid API key.
 
 #### Google Cloud Services Key (for Google Maps functionality)
-**Locate the line in your code:** `GOOGLEMAPS_API_KEY = 'Please enter your Google Cloud Platform API key'`
+**Locate the line in your code:** `GOOGLEMAPS_API_KEY = 'Please enter your Google Cloud API key'`  
 **Provide your Google Maps API Key:** Insert your Google Cloud Platform API key in place of the placeholder text.
 
 #### Important Notes
