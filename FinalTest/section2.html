@@ -1,0 +1,67 @@
+<section id="content2" class="content hidden">
+
+    <h1>Build and Run Instructions</h1>
+    <ul>
+        <li>
+            <h2>Step1: Navigate to the Project Directory</h2>
+            <p>When you have cloned the repository from GitHub to your local machine with git clone, change your current directory to our project's directory.</p>
+            <img src="images/step1.png" alt="step1" style="max-width: 800px">
+        </li>
+
+        <li>
+            <h2>Step2: Set up python virtual environment</h2>
+            <p>It's a good practice to create a virtual environment for Python projects to isolate the project-specific dependencies. You can create a virtual environment using the command: python3 -m MealMate_venv venv</p>
+            <br>
+            <img src="images/step2.png" alt="step2" style="max-width: 800px">
+            <br>
+            <p>To activate your virtual environment</p>
+            <br>
+            <p>On Unix or MacOS</p>
+            <img src="images/step2-1.png" alt="step2-1" style="max-width: 800px">
+            <p>On Windows</p>
+            <img src="images/step2-2.png" alt="step2-2" style="max-width: 800px">
+        </li>
+
+        <li>
+            <h2>Step3: Install the required packages</h2>
+            <p>
+                Since the libraries provide specific functionalities and features that are not included in the base Python language, you need to ensure that all the external libraries and dependencies the project needs to function correctly and available.Our project file includes a 'requirement.txt' file, you can install required packages using the command: pip install -r requirements.txt
+            </p>
+            <img src="images/step3.png" alt="step3" style="max-width: 800px">
+            <br>
+
+        </li>
+
+        <li>
+            <h2>Step4: Initialize the database</h2>
+            <p>
+                To initialize the database, create the necessary tables, and apply any existing migrations. You can usually initialize the database using these commands:
+            </p>
+            <img src="images/step4.png" alt="step4" style="max-width: 800px">
+            <br>
+
+        </li>
+
+        <li>
+            <h2>Step5: Set the FLASK_APP environment Variable</h2>
+            <p>
+                You need to tell Flask where your application is located. Our file is named app.py, so you can use the command: export FLASK_APP = app.py. On Windows, use the 'set' command instead of export.
+            </p>
+            <img src="images/step5.png" alt="step5" style="max-width: 800px">
+            <br>
+
+        </li>
+
+        <li>
+            <h2>Step6: Run the application</h2>
+            <p>
+                Finally, you can run the Flask application using the following command: 'flask run'.  Your Flask application should now be running on your local machine. By default, Flask applications run on port 5000. You can access it by opening a web browser and navigating to http://localhost:5000.
+            </p>
+            <img src="images/step6.png" alt="step6" style="max-width: 800px">
+            <br>
+
+        </li>
+
+    </ul>
+
+</section>

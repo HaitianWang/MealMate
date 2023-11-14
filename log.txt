@@ -1,0 +1,464 @@
+*   commit f0e4a8f32caae02f6bc4de1787bf6a3cd6ccde21 (HEAD -> main)
+|\  Merge: 82bfee3 4d4de91
+| | Author: SimonDell <simonqiu4@gmail.com>
+| | Date:   Mon May 22 06:09:41 2023 +0800
+| | 
+| |     Merge branch 'master'
+| | 
+| * commit 4d4de912dd387d6ce61fbd56aa665272f1b1277c (origin/master, master)
+| | Author: SimonDell <simonqiu4@gmail.com>
+| | Date:   Mon May 22 06:08:09 2023 +0800
+| | 
+| |     fianl
+| | 
+| * commit 54af5e9c240d1c000f81631cd326451a65a7829c
+| | Author: SimonDell <simonqiu4@gmail.com>
+| | Date:   Mon May 22 05:01:59 2023 +0800
+| | 
+| |     update NLP
+| | 
+| * commit fce0851dcc67ca528533f46825c22abeaa3b499c (origin/JS_history_page, JS_history_page)
+| | Author: SimonDell <simonqiu4@gmail.com>
+| | Date:   Mon May 22 01:07:32 2023 +0800
+| | 
+| |     CSS History Page
+| * commit d696448e82cc680e8b5a26518375b33657b53b1c (refs/stash)
+|/| Merge: 9cad3d7 e54a53b
+| | Author: hannah liang <23461235@student.uwa.edu.au>
+| | Date:   Sat May 20 13:21:53 2023 +0800
+| | 
+| |     WIP on master: 9cad3d7 fix chat page bug
+| | 
+| * commit e54a53b9ec9e3f8b6d86a03cee2b66e8a976f359
+|/  Author: hannah liang <23461235@student.uwa.edu.au>
+|   Date:   Sat May 20 13:21:53 2023 +0800
+|   
+|       index on master: 9cad3d7 fix chat page bug
+|   
+| * commit 27ce6414f7d7e088ca4fbc4808f528b752fc7547 (origin/update_test)
+| | Author: SimonDell <simonqiu4@gmail.com>
+| | Date:   Fri May 19 21:20:21 2023 +0800
+| | 
+| |     update
+| | 
+| * commit 93f4f6bae9f5858231fee66504b388d193eb588f
+|/  Author: SimonDell <simonqiu4@gmail.com>
+|   Date:   Fri May 19 20:44:56 2023 +0800
+|   
+|       add readme.txt
+| 
+* commit 9cad3d7411b5011f9e69d418e9ab60ba2b39121a (origin/master, master)
+| Author: SimonDell <simonqiu4@gmail.com>
+| Date:   Fri May 19 18:58:38 2023 +0800
+| 
+|     fix chat page bug
+| 
+* commit 2879ef8dec61f0279d96a4ff4a853a93da5306b7 (origin/storage)
+| Author: SimonDell <simonqiu4@gmail.com>
+| Date:   Fri May 19 18:25:21 2023 +0800
+| 
+|     update
+| 
+* commit e53d4bbc4502f4f5ecfc819cb46406434bafe958
+| Author: SimonDell <simonqiu4@gmail.com>
+| Date:   Fri May 19 18:06:22 2023 +0800
+| 
+|     save backup
+|     
+| *   commit 23530c41a037da4b29de73c1045ae35f23b8334d (origin/main, main)
+| |\  Merge: c85a144 5effffa
+| | | Author: hannah liang <23461235@student.uwa.edu.au>
+| | | Date:   Fri May 19 16:15:35 2023 +0800
+| | | 
+| | |     Delete app.db to merge
+| | | 
+| | * commit 5effffa1875991b3860a1b08519bfdfa4d03144e (origin/CSS_Styles)
+| | | Author: hannah liang <23461235@student.uwa.edu.au>
+| | | Date:   Fri May 19 16:09:15 2023 +0800
+| | | 
+| | |     fix bugs
+| | |   
+| | *   commit 22ab64dbb1bfcb0e524c9a30758a664161d62754 (origin/Update_HTML)
+| | |\  Merge: e7e807e c22de1a
+| |_|/  Author: hannah liang <23461235@student.uwa.edu.au>
+|/| |   Date:   Fri May 19 09:54:27 2023 +0800
+| | |   
+| | |       delete .db to merge
+| | | 
+* | | commit c22de1a631237fbf34678f1294ae4e4d8b9b210e
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Fri May 19 09:51:27 2023 +0800
+| | | 
+| | |     update
+| | | 
+* | | commit 7bbc324b0dabf5e38c06b854dfe8a4b53226b946 (origin/feature_update_test)
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Fri May 19 09:41:45 2023 +0800
+| | | 
+| | |     update test
+| | | 
+* | | commit 429cd2b47406f14449d2e15ec5d01aace31d9fbf
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Fri May 19 02:19:43 2023 +0800
+| | | 
+| | |     add new test script
+| | | 
+* | | commit aaa2851ea3c74561793d38bef3dd56310aeb64bc
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Thu May 18 19:54:40 2023 +0800
+| | | 
+| | |     fix bugs in test
+| | |   
+* | |   commit ffbe4c05994c671d3343a8b139fb30e396bec912
+|\ \ \  Merge: 7ad5e68 52031cf
+| | | | Author: SimonDell <simonqiu4@gmail.com>
+| | | | Date:   Thu May 18 14:01:24 2023 +0800
+| | | | 
+| | | |     update app.db
+| | | | 
+| * | | commit 52031cfdc182992993da09ddc69b7288f12a19b0 (origin/test)
+| | | | Author: SimonDell <simonqiu4@gmail.com>
+| | | | Date:   Wed May 17 19:32:22 2023 +0800
+| | | | 
+| | | |     test
+| | | | 
+| * | | commit db966980b42138f8ee4af3e12476391f1a73a81a
+| | | | Author: SimonDell <simonqiu4@gmail.com>
+| | | | Date:   Wed May 17 12:09:28 2023 +0800
+| | | | 
+| | | |     add test function
+| | | | 
+* | | | commit 7ad5e68724d51fc4a4516d1dec83d60b188512da (origin/update_type_meal)
+| | | | Author: SimonDell <simonqiu4@gmail.com>
+| | | | Date:   Thu May 18 13:48:17 2023 +0800
+| | | | 
+| | | |     fix the bugs in type meal
+| | | | 
+* | | | commit be98f979c2c0495bdb0354a1f9b4d3b943cf4f35
+| | | | Author: SimonDell <simonqiu4@gmail.com>
+| | | | Date:   Wed May 17 21:16:47 2023 +0800
+| | | | 
+| | | |     update time function
+| | | | 
+| | | * commit e7e807e546b48e07302d42f5f6bf8d31314e77ef (origin/CSS_style_v1, CSS_style_v1)
+| |_|/  Author: hannah liang <23461235@student.uwa.edu.au>
+|/| |   Date:   Wed May 17 22:14:08 2023 +0800
+| | |   
+| | |       Edit basic css style
+| | | 
+* | | commit 553b79b6574c65d9634f7f9037d88c0c86fd85f1
+| | | Author: hannah liang <23461235@student.uwa.edu.au>
+| | | Date:   Wed May 17 21:02:33 2023 +0800
+| | | 
+| | |     Clear unnecessary sections, ready to test
+| | | 
+* | | commit 87460768c459267640f662353245bc8892115cd9
+|/ /  Author: hannah liang <23461235@student.uwa.edu.au>
+| |   Date:   Wed May 17 19:36:57 2023 +0800
+| |   
+| |       Add intro page
+| | 
+| * commit c85a1444ad021dd812d2ede969c34cbab287a7b0
+| | Author: hannah liang <23461235@student.uwa.edu.au>
+| | Date:   Tue May 16 23:22:29 2023 +0800
+| | 
+| |     MealMate version1
+| |   
+| *   commit 397d6ad516f950e06f18212dbeb525194578db41
+| |\  Merge: acfe37a 69f1a40
+| |/  Author: hannah liang <23461235@student.uwa.edu.au>
+|/|   Date:   Tue May 16 23:19:36 2023 +0800
+| |   
+| |       Merge branch 'master'
+| | 
+* | commit 69f1a409db6909e00a7b91700014dd569b0bda3c
+| | Author: SimonDell <simonqiu4@gmail.com>
+| | Date:   Tue May 16 22:54:41 2023 +0800
+| | 
+| |     MealMate version1
+| | 
+* | commit 77dcad6cf0f64f5a2c954c0c8b76557ea43fe2ea
+| | Author: SimonDell <simonqiu4@gmail.com>
+| | Date:   Tue May 16 22:26:45 2023 +0800
+| | 
+| |     delete extra HTML_VIEW
+| | 
+* | commit e9b5c50fa7bada1dc4b0625bd73f2fe4e4d55377
+| | Author: SimonDell <simonqiu4@gmail.com>
+| | Date:   Tue May 16 22:04:22 2023 +0800
+| | 
+| |     fix bugs
+| | 
+* | commit 4888d02600baed825c8be479fb8289490160f679
+| | Author: SimonDell <simonqiu4@gmail.com>
+| | Date:   Tue May 16 21:50:37 2023 +0800
+| | 
+| |     fix bugs
+| |   
+* |   commit b38ed30e2349d642968d37a8b2bd46fe042a058d
+|\ \  Merge: feee58f bdd47a6
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Tue May 16 21:40:17 2023 +0800
+| | | 
+| | |     merge from history
+| | | 
+| * | commit bdd47a6c1e2124ddc2458262244bcc0826907e76
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Tue May 16 21:38:40 2023 +0800
+| | | 
+| | |     merge to master
+| | | 
+* | | commit feee58fdf5c7767d3ec83138fc7b9850c58bbd9f
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Tue May 16 21:36:59 2023 +0800
+| | | 
+| | |     fix bug
+| | | 
+* | | commit 2a0c777145ed080d61977798797154eddaa8ebe4
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Tue May 16 21:07:05 2023 +0800
+| | | 
+| | |     add app.db
+| | | 
+* | | commit 13a2db4d3e28c397027fb8cabf49e6d887accdfc
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Tue May 16 20:50:56 2023 +0800
+| | | 
+| | |     fix
+| | |   
+| | *   commit acfe37a14263e1f2e55ae56be6748223fa8faec3
+| | |\  Merge: 82bfee3 dcbb8cc
+| |_|/  Author: hannah liang <23461235@student.uwa.edu.au>
+|/| |   Date:   Tue May 16 20:36:08 2023 +0800
+| | |   
+| | |       Merge branch 'master'
+| | | 
+* | | commit dcbb8ccfa09a7d13814551bcd8c4364e2d3b3d5b
+|\| | Merge: 67b03a7 89c8cf4
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Tue May 16 20:31:54 2023 +0800
+| | | 
+| | |     update master
+| | | 
+| * | commit 89c8cf4913c61ea8b4235a1148f3f285f7527f09 (origin/history)
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Tue May 16 20:24:34 2023 +0800
+| | | 
+| | |     fix bugs in id
+| | | 
+| * | commit c8b16f732ab79741d92936f8396c4d1ff9ae19ca (history)
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Tue May 16 18:37:49 2023 +0800
+| | | 
+| | |     fix some bugs in history and chat robot
+| | | 
+| * | commit 14aad8ac42a8d449fb5d313dbcdbb147bfbaee68
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Tue May 16 16:35:47 2023 +0800
+| | | 
+| | |     fix bug in history function
+| | | 
+| * | commit 5724081e2800ad0b85ac8144fc4e34dfa99f4cf7 (origin/feature_type_meal)
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Mon May 15 18:20:01 2023 +0800
+| | | 
+| | |     fix bug in restuarant table
+| | | 
+| * | commit 9ce882158af5092d52d9217ebb690d33af955462 (origin/feature_random_meal, origin/feature_location_meal)
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Mon May 15 05:12:26 2023 +0800
+| | | 
+| | |     add random meal
+| | | 
+| * | commit 29009f41eb95ed3d3b81293bb72bed55899977a6 (origin/feature_chat_page)
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Mon May 15 04:50:11 2023 +0800
+| | | 
+| | |     add main chat page
+| | | 
+* | | commit 67b03a7c2c62e5f31211859db07794248f7071b7
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Tue May 16 20:28:34 2023 +0800
+| | | 
+| | |     fix bugs
+| | | 
+* | | commit 4f2b34211193fb6eb5454a92a568eb8c79c00205
+|\| | Merge: 6e73deb 696c479
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Mon May 15 04:04:26 2023 +0800
+| | | 
+| | |     Merge branch 'feature_email_verify'
+| | | 
+| * | commit 696c4793e67e87e6dab6047f3bca83f824ee3bc8 (origin/feature_email_verify)
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Mon May 15 04:03:19 2023 +0800
+| | | 
+| | |     fix some bugs
+| | |   
+* | |   commit 6e73deb43b2c0c516c303080210018fcf097a90c
+|\ \ \  Merge: bab5b7a 8032f97
+| | | | Author: SimonDell <simonqiu4@gmail.com>
+| | | | Date:   Mon May 15 03:49:11 2023 +0800
+| | | | 
+| | | |     Merge branch 'feature_email_verify'
+| | | | 
+| * | | commit 8032f972022dbd2afafb4056839a8425d4396031
+| |/ /  Author: SimonDell <simonqiu4@gmail.com>
+| | |   Date:   Mon May 15 03:46:57 2023 +0800
+| | |   
+| | |       fix some bugs
+| | | 
+| * | commit 4d93f958e0406926a41977e923ead678fa571ab0
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Mon May 15 03:41:33 2023 +0800
+| | | 
+| | |     fix bug again
+| | | 
+| * | commit 602c95625eb685bff4b4a359a9970e26a4b886e9
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Mon May 15 03:27:14 2023 +0800
+| | | 
+| | |     fit the bug in email verification
+| | | 
+| * | commit 377a356bf7d921962053f5c8933a60266ab7b899 (feature_email_verify)
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Mon May 15 02:46:50 2023 +0800
+| | | 
+| | |     Add function of email verification
+| | | 
+* | | commit bab5b7a431f747627188164007e5060cfe97ad41
+|/ /  Author: SimonDell <simonqiu4@gmail.com>
+| |   Date:   Mon May 15 03:48:46 2023 +0800
+| |   
+| |       save db
+| | 
+* | commit ffb1b1bf8a155e04a5cf32dac33c0944af36a734
+| | Author: SimonDell <simonqiu4@gmail.com>
+| | Date:   Mon May 15 01:59:19 2023 +0800
+| | 
+| |     update .gitignore
+| |   
+* |   commit 6b7c528be5b90afff3200ab8d04ca646c27c0d4e
+|\ \  Merge: c783363 aa7e054
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Mon May 15 01:42:09 2023 +0800
+| | | 
+| | |     Merge branch 'master' of github.com:HannahLZY/5505Project
+| | | 
+| * | commit aa7e0545c81795820cda020bbfb175d1547f974b
+| | | Author: HannahLiang <110334331+HannahLZY@users.noreply.github.com>
+| | | Date:   Mon May 15 01:35:48 2023 +0800
+| | | 
+| | |     Delete __pycache__ directory
+| | |     
+| | |     Delete this as it is not needed
+| | | 
+* | | commit c783363c2fceebfc65542f8d0e5c30cded82dbc9
+|/ /  Author: SimonDell <simonqiu4@gmail.com>
+| |   Date:   Mon May 15 01:40:22 2023 +0800
+| |   
+| |       delete venv
+| |   
+* |   commit c4c33da5bacdb2453bdb45f942cd758cdb01f322
+|\ \  Merge: 3bd01d7 4cc4248
+| | | Author: hannah liang <liangzhenyi1@gmail.com>
+| | | Date:   Sun May 14 23:07:36 2023 +0800
+| | | 
+| | |     Fix conflict when merge feature-Resest_password to master
+| | | 
+| * | commit 4cc4248f6c3107c6b93a8a96746c26a5e90562d0 (origin/feature-Reset_password, feature-Reset_password)
+| | | Author: hannah liang <liangzhenyi1@gmail.com>
+| | | Date:   Sun May 14 22:58:18 2023 +0800
+| | | 
+| | |     Created base pages
+| | | 
+| * | commit c018cca929cdae44efe74ea3c00adf0b3d7addd7
+| | | Author: hannah liang <liangzhenyi1@gmail.com>
+| | | Date:   Sat May 13 13:30:28 2023 +0800
+| | | 
+| | |     Add reset password feature
+| | | 
+| * | commit 3a0711726d69035133e26e5d6f2895b1928ef501
+| | | Author: hannah liang <liangzhenyi1@gmail.com>
+| | | Date:   Sat May 13 10:14:01 2023 +0800
+| | | 
+| | |     Add .gitignore file
+| | | 
+| * | commit d5964a838bff6f553ded523f7a01f2bedb726590
+| | | Author: hannah liang <liangzhenyi1@gmail.com>
+| | | Date:   Sat May 13 09:47:23 2023 +0800
+| | | 
+| | |     add .gitignore file
+| | | 
+* | | commit 3bd01d7a98d7f04efbb045d7606f737d9b063432 (front_end_styles)
+| | | Author: hannah liang <liangzhenyi1@gmail.com>
+| | | Date:   Sun May 14 20:30:30 2023 +0800
+| | | 
+| | |     Update styles with Bootstrap
+| | | 
+* | | commit d5e1277706fa7df9a9c0c54a6f379dec66004da3 (origin/front_end_styles)
+| | | Author: hannah liang <liangzhenyi1@gmail.com>
+| | | Date:   Sun May 14 20:03:16 2023 +0800
+| | | 
+| | |     Add Bootstrap styles
+| | | 
+| | * commit 82bfee3fe809ca1efee5f0cd48ff6ab02be6976e
+| |   Author: HannahLiang <110334331+HannahLZY@users.noreply.github.com>
+| |   Date:   Tue May 9 17:41:22 2023 +0800
+| |   
+| |       Initial commit
+| |   
+| | * commit cc4ef562ec1a874504c0ffa2eadd4c5f2cc95d12 (origin/feature_command)
+| | | Author: SimonDell <simonqiu4@gmail.com>
+| | | Date:   Thu May 11 20:33:51 2023 +0800
+| | | 
+| | |     add command function
+| | |   
+| | *   commit 5edb833976e834c68b21b471f876e8090acd5117
+| | |\  Merge: 2499b89 f891380
+| | |/  Author: SimonDell <simonqiu4@gmail.com>
+| |/|   Date:   Thu May 11 20:31:15 2023 +0800
+| | |   
+| | |       Merge branch 'master' of github.com:HannahLZY/5505Project
+| | | 
+| * | commit f8913807bcdb375cd74fd1c185a1b21803197afc
+|/ /  Author: hannah liang <liangzhenyi1@gmail.com>
+| |   Date:   Wed May 10 19:38:05 2023 +0800
+| |   
+| |       Complete login and register page, set Profile page as placeholder
+| | 
+* | commit f943e760c90785d48c73a5866b54222495b050a1
+| | Author: hannah liang <liangzhenyi1@gmail.com>
+| | Date:   Wed May 10 15:26:25 2023 +0800
+| | 
+| |     Fix bugs and confirm Access structure
+| | 
+| * commit 2499b89c1bd96cda9feb60c960f0b4a67048a737
+|/  Author: SimonDell <simonqiu4@gmail.com>
+|   Date:   Thu May 11 20:29:45 2023 +0800
+|   
+|       modify config.py
+|   
+| * commit ab87577db9ec773fb9cceab54d1db1d39c8bc18f (origin/feature_googlemap)
+|/  Author: SimonDell <simonqiu4@gmail.com>
+|   Date:   Thu May 11 20:26:27 2023 +0800
+|   
+|       add googlemap function
+|   
+| * commit b4c0172fc7167f298b5c4eedf6e892a62e250fbb (origin/feature_NPL)
+|/  Author: SimonDell <simonqiu4@gmail.com>
+|   Date:   Thu May 11 20:16:45 2023 +0800
+|   
+|       add NPL module
+| 
+* commit e504491eb6ac3c760040c01ceacec85db9a621d0
+| Author: hannah liang <liangzhenyi1@gmail.com>
+| Date:   Tue May 9 22:55:17 2023 +0800
+| 
+|     Add requirements.txt
+| 
+* commit ae737b88d8b5f353792f0571f02b64e7569a03cc
+  Author: hannah liang <liangzhenyi1@gmail.com>
+  Date:   Tue May 9 22:23:36 2023 +0800
+  
+      Create basic files of flask framework

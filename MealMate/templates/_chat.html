@@ -1,0 +1,53 @@
+
+<div class="fake-dialog-container"> </div>
+
+<div class="list-box">
+    <dl> 
+        <dt>
+            {% if message['type'] == current_user %}
+                <a class="list-box-img" href="{{ url_for('user', username=current_user.username) }}">
+                    <img  src="{{ current_user.avatar(70) }}" />
+                </a>
+            {% else %}
+                <a class="list-box-img-left" href="{{ url_for('user', username=current_user.username) }}">
+                    <img src="/static/image/small-chat-icon.jpg" />
+                </a>
+            {% endif %}
+         
+        </dt>
+        {% if message['type'] == current_user %}
+        <dd style=" position: absolute; right:90px;top:20px">
+        
+            <a href="{{ url_for('user', username=current_user.username) }}">
+                {% if message['type'] == current_user %}
+                    {{ current_user.username }}
+                {% else %}
+                    MealMate
+                {% endif %}
+                </a>
+                says:
+                <br>
+                {{ message['text'] }}
+        </dd>
+        {% else %}
+        
+        <dd style="margin:100px 20px 0 100px">
+            
+            <a href="{{ url_for('user', username=current_user.username) }}">
+                {% if message['type'] == current_user %}
+                    {{ current_user.username }}
+                {% else %}
+                    MealMate
+                {% endif %}
+                </a>
+                says:
+                <br>
+                {{ message['text'] }}
+        </dd>
+        {% endif %}
+
+    </dl>  
+</div>
+
+
+

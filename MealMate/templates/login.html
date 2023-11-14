@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/newstyle.css') }}">
+
+
+<div class="login-register-container">
+    <!-- <a class="back-to-intro" href="{{ url_for('intro') }}"><button> return to intro</button></a> -->
+    <a class="back-to-intro" href="{{ url_for('intro') }}">
+        <img style="width: 200px" src="./static/image/smile-Max.png" alt="Return to Intro">
+      </a>
+      
+    <h1>Welcome to MealMate!</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}<br>
+            {% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}<br>
+            {% for error in form.password.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    <p>
+        Forgot Your Password?
+        <a href="{{ url_for('reset_password_request') }}">Click to Reset It</a>
+    </p >
+
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,219 @@
+
+/* general style */
+body {
+    background-color: #FFE277;
+  }
+  
+  /* login and register style  */
+  .login-register-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh; 
+    }
+    
+    .login-register-container h1 {
+      text-align: center;
+    }
+    
+    .login-register-container form {
+      width: 300px; 
+      text-align: center;
+    }
+  
+  
+    /* chat page style */
+  
+   /* Submit buttons  */
+  input[type="submit"] {
+    background-color: #ffd93d !important;
+    border: none;
+    color: white;
+    padding: 9px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin-top: 20px; */
+  }
+  .submit-button {
+    text-align-last: center;
+  }
+  
+  .login-title {
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px #ddd solid;
+    margin-bottom: 20px;
+  }
+  
+  .left-title {
+    flex: 1;
+  }
+  .right-title {
+    flex: 1;
+  }
+  
+  .login-form {
+    margin: 0 auto;
+    width: 250px;
+  }
+  
+  .control {
+    width: 340px;
+    padding: 20px;
+    background: white;
+    margin: 170px 0 0 -170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    border-radius: 5px;
+  }
+  
+  /* chatting page */
+  .is-show {
+    display: block !important;
+  }
+  .conversation-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  
+  .wrapper-box {
+  height: 70vh;
+  overflow-y: auto;
+  border: 1px #999 solid;
+  /* position: relative; */
+  border-radius: 10px;
+  /* padding-bottom: 170px; */
+  width: 100%;
+  }
+  .dialog-box {
+  /* width: 87%; */
+  background-color: #fff;
+  padding: 20px;
+  /* position: absolute; */
+  bottom: 1px;
+  left: 0px;
+  right: 0;
+  /* margin: 0px auto; */
+  border-radius: 12px;
+  }
+  .dialog-input {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .left-input {
+    width: 800px;
+    display: block;
+  }
+  
+  
+  .left-input textarea {
+    width: 100%;
+    height: 40px;
+    resize: none;
+  }
+  .list-box {
+    display: flex;
+    position: relative;
+  }
+  .list-box dl {
+    overflow: hidden;
+  }
+  /* .list-box dt{width:80px;height:80px;} */
+  .list-box dd {
+    flex: 1;
+    background: #ffb84c;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+  }
+  .list-box-img {
+    position: absolute;
+    border: 1px ddd solid;
+    right: 0;
+    border-radius: 10px;
+    top: 25px;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .list-box-img-left {
+    position: absolute;
+    border: 1px #ddd solid;
+    left: 1%;
+    border-radius: 10px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .sub-menu {
+  display: none;
+  }
+  
+  .open > .sub-menu {
+  display: block;
+  }
+  .expansion-panel {
+  list-style-type: none;
+  }
+  
+  .panel-item {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  }
+  .panel-item:hover {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: rgb(192, 192, 192);
+  }
+  
+  .panel-title {
+  display: inline-block;
+  }
+  
+  .panel-toggle {
+  display: inline-block;
+  margin-left: 5px;
+  }
+  
+  .sub-panel {
+  display: none;
+  padding-left: 20px;
+  }
+  
+  .sub-panel li {
+  padding: 5px 0;
+  }
+  
+  .panel-item.open .sub-panel {
+  display: block;
+  }
+  
+  .panel-item.open .panel-toggle::after {
+  content: "-";
+  }
+  
+  .panel-toggle::after {
+  content: "+";
+  font-weight: bold;
+  margin-left: 5px;
+  }
+  
+  .panel-toggle:hover {
+  text-decoration: underline;
+  }
+  
+  
+  

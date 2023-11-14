@@ -1,0 +1,253 @@
+/* --------------------------------------------------------------------------
+  * body and html
+  * -------------------------------------------------------------------------
+  */
+  html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: #ffd93d;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* --------------------------------------------------------------------------
+  * login and register page and main panel styles here
+  * -------------------------------------------------------------------------
+  */
+/* Submit buttons  */
+input[type="submit"] {
+    background-color: #ffd93d !important;
+    border: none;
+    color: white;
+    padding: 9px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.navbar{margin:0 11% !important;}
+.submit-button {
+    text-align-last: center;
+}
+
+.login-title {
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px #ddd solid;
+    margin-bottom: 20px;
+}
+
+/* Jumping animaition on first time going to login page to show image is clickable */
+@keyframes jumpAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.back-to-intro img {
+  /* call jump animation */
+  animation: jumpAnimation 1s;
+  transition: transform 0.2s;
+}
+
+.back-to-intro img:hover {
+  transform: scale(1.1);
+}
+
+.left-title {
+    flex: 1;
+}
+.right-title {
+    flex: 1;
+}
+
+.login-form {
+    margin: 0 auto;
+    width: 250px;
+}
+
+.control {
+    width: 340px;
+    padding: 20px;
+    background: white;
+    margin: 170px 0 0 -170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    border-radius: 5px;
+}
+
+/* chatting page */
+.is-show {
+    display: block !important;
+}
+.conversation-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+/* chat panel  */
+.wrapper-box {
+    height: 70vh;
+    margin:0 11%;
+    overflow-y: auto;
+    border-bottom: 1px #eee solid;
+    background:#fff;
+}
+
+/* Buttom dialog box in main page */
+.dialog-box {
+    background-color: #fff;
+    padding: 20px;
+    bottom: 1px;
+    left: 0px;
+    right: 0;
+    margin: 0 11%;
+}
+.dialog-input {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left-input {
+    width: 800px;
+    display: block;
+}
+
+.left-input textarea {
+    width: 100%;
+    height: 40px;
+    resize: none;
+}
+.list-box {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px; 
+}
+.list-box dl {
+    overflow: hidden;
+}
+/* .list-box dt{width:80px;height:80px;} */
+.list-box dd {
+    flex: 1;
+    background: #ffb84c;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+}
+.list-box-img {
+    position: absolute;
+    border: 1px ddd solid;
+    right: 0;
+    border-radius: 10px;
+    top: 25px;
+    width: 80px;
+    height: 80px;
+}
+
+.list-box-img-left {
+    position: absolute;
+    border: 1px #ddd solid;
+    left: 1%;
+    border-radius: 10px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+/* --------------------------------------------------------------------------
+  * all the chat history styles
+  * -------------------------------------------------------------------------
+  */
+.sub-menu {
+    display: none;
+}
+
+.open > .sub-menu {
+    display: block;
+}
+.expansion-panel {
+    list-style-type: none;
+}
+
+.panel-item {
+    cursor: pointer;
+    padding: 10px;
+    margin: 20px;
+    border-bottom: 1px solid #ccc;
+    border: solid 2px;
+    border-radius: 5px;
+}
+.panel-item:hover {
+    cursor: pointer;
+    padding: 10px;
+    /* border-bottom: 1px solid #ccc; */
+    background-color: rgb(230, 230, 230);
+}
+
+.panel-title {
+    display: inline-block;
+}
+
+.panel-toggle {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.sub-panel {
+    display: none;
+    padding-left: 20px;
+}
+
+.sub-panel li {
+    padding: 5px 0;
+}
+
+.panel-item.open .sub-panel {
+    display: block;
+}
+
+.panel-item.open .panel-toggle::after {
+    content: "-";
+}
+
+.panel-toggle::after {
+    content: "+";
+    font-weight: bold;
+    margin-left: 5px;
+}
+#chat-input{border:1px #ddd solid !important;border-radius:10px 0 0 10px;}
+#send-button{border-radius: 0 10px 10px 0;}
+.panel-toggle:hover {
+    text-decoration: underline;
+}
+
+
+/* --------------------------------------------------------------------------
+  * Profile panel
+  * -------------------------------------------------------------------------
+  */
+.profile-page {
+    display: flex;
+    justify-content: space-around;
+    margin: 10% 0;
+}

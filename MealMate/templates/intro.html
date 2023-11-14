@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meal Mate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/intro.css') }}" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="intro-header">
+      <h1 style="margin: 0; align-self: center;">Meal Mate</h1>
+      <div class="dropdown">
+        <button class="menu-icon" id="toggle">&#9776;</button>
+        <ul class="menu">
+            <li><a href="https://www.linkedin.com/in/zhenyi-liang/" target="_blank">Hannah</a></li>
+            <li><a href="https://www.linkedin.com/in/haitian-wang/" target="_blank">Simon</a></li>
+            <li><a href="{{ url_for('readme') }}" target="_blank">About Us</a></li>
+        </ul>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </div>
+
+    <div
+      class="container"
+      style="min-width: 100vw !important;margin: 0; height: 100%;">
+      <!-- container1: chatbot introduction -->
+      <div style="align-self: center !important ; text-align-last: center;">
+        <h1 class="meet-max">Hi ! I am your Meal Mate Max!</h1>
+        <p class="meet-max">
+          Discover the perfect meal with our chatbot companion! <br>
+          Whether you need a random suggestion, a specific dish recommendation, or a restaurant based on cuisine, our chatbot has you covered! <br> Embrace culinary exploration and let our bot guide you to delightful dining experiences. Get ready to indulge your taste buds!
+        </p>
+        <a href="{{ url_for('login') }}"
+          ><button class="talk-to-max-btn">Talk to Max!</button>
+        </a>
+      </div>
+
+      <!-- container2: Max Image -->
+      <div>
+        <img
+          src="./static/image/smile-Max.png"
+          alt="Monkey-max-image"
+          class="img-fluid"
+        />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agile Web Development Group Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            max-width: 800px;  
+            margin: auto; 
+        }
+
+        header {
+            background-color: #282c34;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+        }
+
+        img {
+            max-width: 100%;  
+        }
+
+        .step {
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #888;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid transparent;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: #333;
+            border-bottom-color: #333;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+        }
+
+        section p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        section:not(:first-child)::before {
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: #eee;
+            margin-bottom: 30px;
+        }
+    </style>
+    
+
+    <script>
+        window.onload = function() {
+            var navLinks = document.querySelectorAll('nav a');
+            for (var i = 0; i < navLinks.length; i++) {
+                navLinks[i].addEventListener('click', function(e) {
+                    e.preventDefault();
+                    removeActiveClass();
+                    this.classList.add('active');
+                    var target = document.querySelector(this.getAttribute('href'));
+                    window.scrollTo({
+                        top: target.offsetTop - 100,
+                        behavior: "smooth"
+                    });
+                });
+            }
+            function removeActiveClass() {
+                for (var i = 0; i < navLinks.length; i++) {
+                    navLinks[i].classList.remove('active');
+                }
+            }
+        };
+    </script>
+</head>
+
+
+<body>
+    <header>
+        <h1>CITS3403 Agile Web Development</h1>
+        <p>Haitian Wang  23815631</p>
+    </header>
+    <nav>
+        <!-- Navigation for the sections -->
+        <a href="#overview">Overview</a>
+        <a href="#build-run-instructions">Build and Run Instructions</a>
+        <a href="#suggested-features">Suggested Features</a>
+        <a href="#advice-for-groups">Advice for Groups</a>
+    </nav>
+    <!-- Your sections content here -->
+
+    <section id="overview">
+        <h2>Overview</h2>
+    
+        <h3>About MealMate</h3>
+        <p>
+            Meet MealMate, an innovative chatbot assistant designed to streamline the dining decisions of busy students and young professionals. Conceived to combat the fatigue of overwhelming food choices, MealMate simplifies the selection process through user-friendly interactions and personalized recommendations.
+        </p>
+    
+        <h3>Our Audience</h3>
+        <p>
+            Our primary audience is the busy, food-loving demographic of students and professionals. The application serves as a virtual aide, offering dining suggestions tailored to unique tastes, dietary needs, and budget. Whether you need a quick lunch fix or seek a culinary adventure, MealMate is your reliable guide.
+        </p>
+    
+        <h3>How It Works</h3>
+        <p>
+            MealMate works by engaging in a user-friendly chat interface. Simply input your desired restaurant, type of cuisine, or even your current location, and MealMate uses its comprehensive database to suggest the best matches. This database encompasses a wide variety of dining places, from local gems and trendy cafes to popular eateries. Based on your inputs and preferences, MealMate provides useful information such as menus, operating hours, customer reviews, and delivery options for nearby establishments.
+        </p>
+    
+        <h3>Benefits</h3>
+        <p>
+            With MealMate, dining decision stress is a thing of the past. It empowers users with informed choices, saving valuable time and reducing meal-related anxiety. Enjoy a smarter, more efficient dining experience with MealMate, your personalized dining companion.
+        </p>
+        <image src="./images/WebInterface.png">
+    </section>    
+
+    <section id="build-run-instructions">
+        
+    </section>
+    
+    <section id="suggested-features">
+        <h2>Suggested Features</h2>
+    
+        <h3>Feature 1: Restaurant and Dish Rating System</h3>
+        <p>
+            The feature enables users to rate and review restaurants and dishes they've tried. This offers firsthand knowledge of the restaurant's food quality, customer service, and overall dining experience. Users can also share photos of the dishes, enriching the visual experience for potential diners.
+        </p>
+        
+        <h4>User Story</h4>
+        <p>
+            As a food lover, I want to rate the restaurant and the dishes after my meal, so that I can share my experiences and help other users make informed dining decisions.
+        </p>
+    
+        <h4>Test Case</h4>
+        <ul>
+            <li>
+                <strong>Test Case 1:</strong>
+                Given a user is interacting with MealMate after a meal at a restaurant
+                <br>
+                When the user says "I want to rate the restaurant",
+                <br>
+                Then MealMate should prompt the user to provide a rating on a scale and input it into the system.
+                <br>
+            </li>
+            <br>
+            <li>
+                <strong>Test Case 2:</strong>
+                Given the user has provided a rating for the restaurant,
+                <br>
+                When they say "I want to write a review",
+                <br>
+                Then Max should ask the user to speak out the review, convert it to text, and save it under the user's profile and the restaurant's page.
+                <br>
+            </li>
+            <br>
+            <li>
+                <strong>Test Case 3:</strong>
+                Given the user wants to upload a picture of the dish,
+                <br>
+                When they say "I want to share a picture",
+                <br>
+                Then Max should guide the user to upload the photo, and upon successful upload, the photo should be visible along with their review.
+                <br>
+            </li>
+            <br>
+        </ul>
+    
+        <h3>Feature 2: Follow and Chat System</h3>
+        <p>
+            The follow and chat feature allows users to follow each other and exchange messages. Users can share their culinary experiences, making the app more interactive and social. This feature also allows users to be notified about new reviews and ratings from users they follow.
+        </p>
+    
+        <h4>User Story</h4>
+        <p>
+            As a food enthusiast, I want to follow other users and chat with them, so that I can share experiences and discover new food based on their reviews.
+        </p>
+    
+        <h4>Test Cases</h4>
+        <ul>
+            <li>
+                <strong>Test Case 1:</strong>
+                Given a user wants to follow another user,
+                <br>
+                When they tell Max "I want to follow [username]",
+                <br>
+                Then Max should process the request, and upon successful execution, the user should start following that user.
+                <br>
+            </li>
+            <br>
+            <li>
+                <strong>Test Case 2:</strong>
+                Given a user is following another user,
+                <br>
+                When the followed user posts a new review and Max informs the user about the new review,
+                <br>
+                Then the user should be able to see the new review through their chat with Max.
+                <br>
+            </li>
+            <br>
+            <li>
+                <strong>Test Case 3:</strong>
+                Given two users who want to chat,
+                <br>
+                When one user says "I want to send a message to [username]",
+                <br>
+                Then Max should guide the user to send the message, and upon successful delivery, the recipient should receive the message in their chat with Max and be able to reply.
+                <br>
+            </li>
+            <br>
+        </ul>
+    </section>
+    
+    <section id="advice-for-groups">
+        <h2>Advice for Groups</h2>
+    
+        <h3>a. A set of software tools you would recommend using, and the best way to incorporate them into the project. Include hyperlinks to the tool, and possibly link useful tutorials.</h3>
+        <p>
+            The project can be developed using a range of tools, starting with <a href="https://code.visualstudio.com/">Visual Studio Code</a>, a versatile text editor that supports numerous programming languages and comes with built-in support for Git. It provides excellent support for Python, which is the primary language of our project. To manage the versions of your codebase effectively, I'd recommend <a href="https://www.gitkraken.com/">GitKraken</a>, a graphical user interface for Git that is intuitive and easy to use.
+        </p>
+        <p>
+            In terms of libraries for Flask application development, the following are invaluable: 
+            <ul>
+                <li><a href="https://wtforms.readthedocs.io/en/stable/">WTForms</a> for form handling</li>
+                <li><a href="https://pythonhosted.org/pytz/">pytz</a> for timezone manipulation</li>
+                <li><a href="https://www.sqlalchemy.org/">SQLAlchemy</a> for database management</li>
+            </ul>
+            Online tutorials such as those from <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">Flask Mega Tutorial</a> can provide great insights into using these tools effectively.
+        </p>
+        <p>
+            For third-party APIs, <a href="https://openai.com/research/">OpenAI API</a> for AI interactions, <a href="https://developers.google.com/maps">Google Maps API</a> for location services, and <a href="https://sendgrid.com/">SendGrid API</a> for email services would be excellent choices.
+        </p>
+    
+        <h3>b. Recommendations for managing communication, and task allocation within a team of student developers, citing your own experiences in the project.</h3>
+        <p>
+            From my experience, open and regular communication is the key to successful group work. Use a common platform like <a href="https://trello.com/">Trello</a> or <a href="https://www.microsoft.com/en/microsoft-teams/group-chat-software">Microsoft Teams</a> where everyone can communicate effectively. Regular meetings should be set up to discuss progress, obstacles, and the next steps. It is also advisable to use a project management tool like Trello or <a href="https://www.atlassian.com/software/jira">Jira</a> to track tasks, assign work, and follow progress. Transparency about the work done and challenges faced can help in timely resolution of issues and smooth functioning of the project.
+        </p>
+    
+        <h3>c. Best practice for prioritizing deadlines and deliverables, particularly when team members have competing deadlines from other units.</h3>
+        <p>
+            The key to managing deadlines is to break down the project into manageable tasks and to create a timeline for each task. Tools like <a href="https://calendar.google.com">Google Calendar</a> or Trello can help with this. It's essential to consider each team member's availability and other commitments while assigning tasks. Prioritize tasks based on their importance and dependencies. If a task is a prerequisite for other tasks or is critical for the project, it should be prioritized. It is also beneficial to have regular check-ins to track progress and adjust timelines and workload as necessary.
+        </p>
+    </section>
+
+    
+<script>
+    let steps = [  {
+            "title": "Install Virtual Environment",
+            "text": "Execute the following command to install a virtual environment: `python -m venv MealMate_venv`",
+            "image": "./images/virtual_venv.png",
+            "aside": {
+            "label": "Python Virtual Environment",
+            "note": "Virtual environments are a tool for creating isolated Python environments. Each virtual environment has its own set of installed packages, which allows different projects to have different dependencies."
+            }
+        },
+        {
+            "title": "Activate the Python Virtual Environment",
+            "text": "Depending on your OS, you will need to run either `source venv/bin/activate` (Linux/MacOS) or `./MealMate_venv/bin/activate` (Windows) to activate the virtual environment.",
+            "image": "./images/activate_virtual_venv.png",
+            "aside": {
+            "label": "Activating Virtual Environment",
+            "note": "Activating the virtual environment will change your shell's prompt to show what virtual environment you're using, and modify the environment so that running python will get you that particular version and installation of Python."
+            }
+        },
+        {
+            "title": "Install Required Packages",
+            "text": "Execute the following command to install the required packages: `pip install -r requirements.txt`",
+            "image": "./images/install_packages.png",
+            "aside": {
+            "label": "Python Packages",
+            "note": "Python packages are a way of organizing related modules. They are directories that must contain a file named __init__.py. This file can be empty, and it indicates that the directory it contains is a Python package."
+            }
+        },
+        {
+            "title": "Set FLASK_APP",
+            "text": "Execute the following command to set the Flask application: `export FLASK_APP=MealMate.py`",
+            "image": "./images/set_flask_app.png",
+            "aside": {
+            "label": "FLASK_APP",
+            "note": "The FLASK_APP environment variable is the name of the module to import at flask run. This can be an absolute or relative import path, or it can be a path to a Python file."
+            }
+        },
+        {
+            "title": "Run the App",
+            "text": "Execute the following command to run the Flask application: `flask run`",
+            "image": "./images/run_app.png",
+            "aside": {
+            "label": "Flask Application",
+            "note": "Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications."
+            }
+        },
+        {
+            "title": "Stop the App",
+            "text": "When you want to stop running the app, simply type `deactivate` in your terminal.",
+            "image": "./images/deactivate_app.png",
+            "aside": {
+            "label": "Deactivating Virtual Environment",
+            "note": "Deactivating the environment will put your shell's environment back to normal, and will put Python and Pip back to their default versions."
+            }
+        }
+            ];
+    
+    function createStepElement(step) {
+    // Create a new div for the step
+    let stepElement = document.createElement('div');
+    stepElement.classList.add('step');
+
+    // Create and append the title
+    let title = document.createElement('h2');
+    title.textContent = step.title;
+    stepElement.appendChild(title);
+
+    // Create and append the description
+    let text = document.createElement('p');
+    text.innerHTML = step.text;
+    stepElement.appendChild(text);
+
+    // Create and append the image
+    let image = document.createElement('img');
+    image.src = step.image;
+    stepElement.appendChild(image);
+
+    // Create and append the aside
+    let aside = document.createElement('div');
+    let button = document.createElement('button');
+    let note = document.createElement('p');
+    note.style.display = 'none'; 
+    note.textContent = step.aside.note;
+    button.textContent = step.aside.label;
+    button.addEventListener('click', function() {
+        note.style.display = note.style.display === 'none' ? 'block' : 'none'; 
+    });
+    aside.appendChild(button);
+    aside.appendChild(note);
+    stepElement.appendChild(aside);
+
+    return stepElement;
+    }
+
+    
+    // Append each step to the build-run-instructions section
+    let instructionsElement = document.getElementById('build-run-instructions');
+    steps.forEach(function(step) {
+      instructionsElement.appendChild(createStepElement(step));
+    });
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+# ignore .pyc files
+*.pyc
+
+# ignore__pycache__
+__pycache__/
+
+# ignore logs and temp files
+logs/
+*.log
+*.bak
+*.tmp
+
+# ignore virtualenv
+venv/
+env/
+.venv/
+.env/
+.virtualenv/
+.Python
+*venv/
+MealMate_venv/
+
+# ignore compiled files
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+.eggs/
+dist/
+build/
+
+# ignore IDE files
+.idea/
+.vscode/
+*.pydevproject
+.project
+.pycproject
+.spyderproject
+.ropeproject
+.swp
+.DS_Store
+
+# ignore database files
+*.db
+
+
+
+
+
+
+
+
+
+

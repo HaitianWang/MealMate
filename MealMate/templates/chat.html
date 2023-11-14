@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<div class="wrapper-box" id="chat-box">
+    {% for message in messages %}
+    {% include '_chat.html' %}
+    {% endfor %}  
+</div>
+
+<div class="dialog-box">
+    <form class="dialog-form" action="" method="post" id="chat-form" onsubmit="clearInput()">
+        {{ form_chat.hidden_tag() }}
+        <p>
+            {{ form_chat.chat.label }}<br>
+            <div class="dialog-input">
+                <span class="left-input">
+                    <textarea id="chat-input" name="chat" rows="4" onkeydown="handleKeyPress(event)">{{ form_chat.chat.data or '' }}</textarea>
+                </span>
+                <span class="right-send">
+                    <input type="submit" value="Send" id="send-button">
+                </span>
+            </div>
+            <br>
+            {% for error in form_chat.chat.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+    </form>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script>
+function handleKeyPress(event) {
+    if (event.keyCode === 13 && !event.shiftKey) {  // Enter key without Shift key
+        event.preventDefault();  // Prevent form submission
+        document.getElementById("send-button").click();  // Trigger click event on Send button
+    }
+}
+
+function clearInput() {
+    setTimeout(function() {
+        document.getElementById("chat-input").value = '';
+    }, 10);
+}
+</script>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

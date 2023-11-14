@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+function toggleChat(session_id) {
+    $('#chat_' + session_id).slideToggle('slow');
+}
+
+$(document).ready(function(){
+  $("#searchBox").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("ul li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/history.css') }}" test="test/css"/>
+
+<div class="container-history">
+  <div class="row align-items-start">
+    <div class="col">
+      <!-- user profile  -->
+        <!-- user profile  -->
+        <div class="d-flex justify-content-center align-items-center">
+            <img class="me-3" src="{{ user.avatar(128) }}">
+            <h1>Hi! {{ user.username }}</h1>
+        </div>
+        {% if user.about_me %}
+            <p class="text-center">{{ user.about_me }}</p>
+        {% endif %}
+        
+        {% if user.last_seen %}
+            <p class="text-center">Last seen on: {{ user.last_seen }}</p>
+            <p class="text-center"><a href="{{ url_for('edit_profile') }}">Edit your profile</a></p>
+        {% endif %}
+
+      <h3>Chatting History</h3>
+
+      <!-- search box -->
+      <input id="searchBox" type="text" placeholder="Search..">
+      
+      {% if histories %}
+          <ul>
+            {% for history in histories %}
+            <li class="sessionItem">
+                <h3 onclick="toggleChat('{{ history.session_id }}')">Session ID: {{ history.session_id }}</h3>
+                <ul id="chat_{{ history.session_id }}" style="display: none;">
+                <h4>Timestamp: {{ history.timestamp }}</h4>
+                {% for conversation in conversations %}
+                    {% if history.session_id == conversation.session_id %}
+                        <li class="chatItem">
+                        {% if conversation.message['type'] == current_user.username %}
+                        <p class="user" style="text-align: left;  word-break: break-all; max-width: 75%; ">{{ current_user.username }}: {{ conversation.message['text'] }}</p>
+                        {% elif conversation.message['type'] == 'ai' %}
+                            <p class="ai" style="text-align: right;  word-break: break-all; max-width: 75%; ">Max: {{ conversation.message['text'] }}</p>
+                        {% else %}
+                        {% endif %}
+                        </li>
+                    {% endif %}
+    
+                {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+          </ul>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<hr>    
+{% endblock %}

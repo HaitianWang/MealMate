@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1>Edit Profile</h1>
+                <form action="" method="post">
+                    {{ form.hidden_tag() }}
+                    <p>
+                        {{ form.username.label }}<br>
+                        {{ form.username(size=32) }}<br>
+                        {% for error in form.username.errors %}
+                        <span style="color: red;">[{{ error }}]</span>
+                        {% endfor %}
+                    </p>
+                    <p>
+                        {{ form.about_me.label }}<br>
+                        {{ form.about_me(cols=50, rows=4) }}<br>
+                        {% for error in form.about_me.errors %}
+                        <span style="color: red;">[{{ error }}]</span>
+                        {% endfor %}
+                    </p>
+                    <p>{{ form.submit() }}</p>
+                </form>
+
+                {% if histories %}
+                <ul class="history-list">
+                    {% for history in histories %}
+                    <li>
+                        <h2>History ID: {{ history.id }}</h2>
+                        <h3>Session ID: {{ history.session_id }}</h3>
+                        <p>Timestamp: {{ history.timestamp }}</p>
+                        
+                        <ul class="conversation-list">
+                        {% for conversation in conversations %}
+                            {% if history.session_id == conversation.session_id %}
+                                <li>
+                                {% if conversation.message['type'] == current_user %}
+                                <p class="user" style="text-align: left;  word-break: break-all; max-width: 75%; ">用户{{ current_user.name }}说:### {{ conversation.message['text'] }}</p>
+                                {% else %}
+                                    <p class="ai" style="text-align: right;  word-break: break-all; max-width: 75%; ">MealMate说:### {{ conversation.message['text'] }}</p>
+                                {% endif %}
+                                </li>
+                            {% endif %}
+
+                        {% endfor %}
+                        </ul>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
