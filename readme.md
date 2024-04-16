@@ -42,7 +42,7 @@ Install virtual envinronment: `python -m venv MealMate_venv`
 ##### if you using linux/MacOs:
 To open Visual Studio Code: `code .`
 
-Activate the python virtual environment: `source venv/bin/activate`
+Activate the python virtual environment: `source MealMate_venv/MealMate_venv/bin/activate`
 
 Install required packages: `pip install -r requirements.txt`
 
@@ -53,7 +53,7 @@ To run the app: `flask run`
 To stop the app: `$deactivate`
 
 ##### if you using Windows:
-Activate the python virtual environment: `./MealMate_venv/bin/activate`
+Activate the python virtual environment: `.\MealMate_venv\Scripts\activate`
 
 Install required packages: `pip install -r requirements.txt`
 
