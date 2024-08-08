@@ -34,12 +34,12 @@ from markdown_it import MarkdownIt
 messages = []
 
 # config google map API
-GOOGLEMAPS_API_KEY = 'Please enter your Google Cloud Platform API key for Using Google Maps'
+GOOGLEMAPS_API_KEY = 'AIzaSyDRH25MTDWBES1UsLCKWONhaYp4TGvg8WA'
 app.config['GOOGLEMAPS_API_KEY'] = GOOGLEMAPS_API_KEY
 gmaps = googlemaps.Client(key=app.config['GOOGLEMAPS_API_KEY'])
 
 # config openAI API 
-openai.api_key = "Please enter your OpenAI API key for using ChatGPT"
+openai.api_key = "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"
 
 dish_list = ['Sweet and Sour Pork', 'Kung Pao Chicken', 'Mapo Tofu', 'Peking Duck', 'Dumplings', 
              'Hot Pot', 'Malatang', 'General Tso Chicken', 'Beijing Beef', 'Egg Foo Young', 
@@ -48,7 +48,7 @@ dish_list = ['Sweet and Sour Pork', 'Kung Pao Chicken', 'Mapo Tofu', 'Peking Duc
              'Korean BBQ', 'Tteokbokki', 'Samgyeopsal', 'Galbi', 'Bibim Naengmyeon', 'Jjajangmyeon']
 
 # config SendGrid API
-YOUR_SENDGRID_ID = 'Please enter your SendGrid API key'
+YOUR_SENDGRID_ID = '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'
 sg = sendgrid.SendGridAPIClient(api_key= YOUR_SENDGRID_ID)
 
 
