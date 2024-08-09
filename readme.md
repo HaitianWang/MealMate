@@ -36,12 +36,13 @@ The controller acts as an intermediary between the models and views. It facilita
 The view is the component of the app through which users directly interact. It is linked to the model and displays the data stored within the model. The HTML files within the "template" folder serve as the views. Users can access information, read it, and interact with it[3].
 
 ## Getting Started
+Clone the project from github repository: `git clone https://github.com/HaitianWang/MealMate.git`
+
+Enter the project root folder: `cd ./MealMate/`
 
 Install virtual envinronment: `python -m venv MealMate_venv` 
 
 ##### if you using linux/MacOs:
-To open Visual Studio Code: `code .`
-
 Activate the python virtual environment: `source MealMate_venv/MealMate_venv/bin/activate`
 
 Install required packages: `pip install -r requirements.txt`
